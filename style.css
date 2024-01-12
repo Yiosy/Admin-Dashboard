@@ -35,11 +35,18 @@ body {
   border-radius: 10px;
   box-shadow: inset 5px 0px 0 0 blue;
   padding-left: 10px;
+  max-height: 230px;
+  padding: 20px 20px 20px;
+}
+.project h2 {
+  padding: 0px;
 }
 .announcements {
   display: grid;
   grid-template-rows: 1fr 1fr;
   padding-left: 30px;
+
+  /* justify-content: center; */
 }
 .header {
   background-color: white;
@@ -52,7 +59,7 @@ body {
   justify-content: space-between;
 }
 input {
-  width: 600px;
+  width: 100%;
   border-radius: 15px;
   background-color: #e8ecf4;
 }
@@ -76,6 +83,7 @@ h2 {
   margin: 0px;
   grid-column: span 2;
   padding: 7px;
+  display: inline;
 }
 .listContainer ul {
   list-style: none;
@@ -87,7 +95,7 @@ h2 {
 
 li img {
   padding-right: 10px;
-  width: 20px;
+  height: 1em;
   fill: blue;
 }
 .listContainer h1 {
@@ -135,4 +143,27 @@ li {
 }
 .name {
   font-size: 24px;
+}
+.trending {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+}
+.trending h1 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.trending div {
+  max-width: 97%;
+  background-color: white;
+  border-bottom: solid blue;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 20px;
+  font-size: 24px;
+}
+.trending img {
+  height: 1rem;
 }
